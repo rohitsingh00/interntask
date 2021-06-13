@@ -13,6 +13,9 @@ app.use(cors());
 
 app.use('/users', Routes);
 
+app.get('/' , (req,res) => {
+    res.send('running');
+});
 
 const URL = 'mongodb+srv://admin:admin123@cluster0.tpbuf.mongodb.net/cluster0?retryWrites=true&w=majority'
 
